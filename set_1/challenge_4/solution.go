@@ -41,12 +41,13 @@ func main() {
 				store[a] = decoded_byte_string[a] ^ byte(b)
 			}
 
-			
+			//List Most common English characters
 			common_english_characters := regexp.MustCompile("E|T|A|O|I|N|S|H|R|D|L|U")
 
+			// Use Regex to check for matches to decoded byte string
 			match_check := common_english_characters.FindAllStringIndex(string(store), -1)
 			
-			
+			// Filter to find the largest matches and spit out all the necessary info to solve the challenge
 			if (len(match_check)) > 15 {
 				fmt.Println("The string reviewed is -->", hex_string)
 				fmt.Println("b is", b, "and the plaintext is --> ",string(store))
