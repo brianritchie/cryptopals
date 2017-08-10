@@ -1,5 +1,11 @@
 # Challenge 1 WriteUp
 
+---
+
+Detailed Writeup can be found here: https://brianritchie.me/crytopals-solution-set-1-challenge-1
+
+---
+
 I have taken a shortcut to the challenge by using the pre-existing libraries in GoLang to produce the output which are the following:
 
 - "encoding/hex"
