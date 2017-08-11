@@ -14,6 +14,12 @@ func main() {
 	
 	store := make([]byte, len(source_string))
 
-	
+	key_one := 0
+	key_two := 1
+	key_three := 3
+
+	for a := 0; a < len(source_string); a++ {
+
+	}
 
 }
